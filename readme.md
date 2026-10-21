@@ -1,0 +1,30 @@
+# [Directional Positioning] Unpowered UAV Positioning Model Based on Azimuth-Angle Optimization Algorithm [with MATLAB+Python Code]
+
+Introduction
+In recent years, with the application of drones, research on drone positioning and formation adjustment has gradually increased. Drone target positioning can be categorized into active and passive based on different application scenarios. Active positioning is mainly based on attitude measurement and laser ranging positioning models. In some drone application scenarios, it is necessary for drones to maintain electromagnetic silence, preventing them from operating in an active positioning mode. Compared to active positioning, passive positioning systems have advantages such as good concealment due to their lack of electromagnetic radiation, but they also face challenges in terms of positioning and adjustment accuracy compared to active positioning because they lack reference distance information [3] [4].
+Positioning algorithms are mathematical models that establish specific state equations after obtaining detailed information about the target, achieving optimal estimation through time or space accumulation of observations. In traditional positioning technologies, geometric algebraic measurements are commonly used to locate the direction of arrival (DOa) or time difference of arrival (TDOa), but these methods cannot meet high-precision positioning requirements, so sometimes positioning algorithms are needed to obtain higher-precision solutions for target positions.
+Research on positioning algorithm for passive systems can be divided into analytical algorithms and iterative algorithms according to the form of results [6]. Analytical algorithms are represented by least squares algorithm (LS), while iterative algorithms are represented by maximum likelihood algorithm (ML) and extended Kalman filter algorithm (EKF). Analytical algorithms are more accurate than traditional methods, but their positioning precision is relatively lower than iterative algorithms. Iterative algorithms require iterative calculations, which may lead to poor real-time performance and dependence on the initial value's accuracy.
+Stansfield's 1947 proposal for the weighted least squares algorithm (WLS) laid the foundation for subsequent positioning system algorithms. Due to its inability to obtain closed-form solutions for targets, WLS is often assisted by numerical search techniques based on gradient descent [9]. Gavish and Weiss [10] analyzed the performance of both algorithms and concluded that even with a sufficiently large number of signal receivers, the WLS algorithm remains an estimator with bias, while the ML algorithm exhibits asymptotic unbiasedness. Therefore, when errors are small, the latter can be considered as an approximation of the former.
+The theory of estimation in terms of unbiasedness, consistency, and efficiency can be used to measure the performance of positioning algorithms and guide their corresponding improvements. In this sense, positioning algorithms are closely related to optimization theory. [11] As for how precision metrics can be utilized to optimize trajectory or optimally distribute maneuverable sensors, strictly speaking, they do not fall within the purview of positioning algorithms and thus are not discussed in detail. Generally, metrics for measuring positioning accuracy include circular probability error (CEP), circular probability error (CEP), and dense ellipsoid.
+Article illustration
+Conclusion
+This paper establishes an optimization adjustment model based on bearing angle for both conical and circular formations of drone formations. In the conical formation, subdividing the formation into triangles and then adjusting the positioning and adjustment based on the relative positions of these triangles results in relatively high accuracy and concise adjustment steps, making it convenient. In the circular formation, an optimization model can be constructed to locate and adjust the deviations of drones, significantly improving accuracy after optimization.
+This model can also be applied to the formation of drones beyond the models proposed in this paper, with adjustments for circular formations also applicable to conical formations, which can be organized using an external circumference. Additionally, it can be utilized for the passive positioning requirements of drone formations such as rectangular formations, whereby a model is constructed based on the geometric properties of such formations. We have discussed the strict requirements for deviation levels in this method, and there is further direction to apply it within a broader range of deviation intervals. For another approach in future research, we note that the specific adjustment effects of drones may be influenced by the exact step size during each adjustment, which could be a topic worth discussing.
+
+## Images
+
+![(Directional Positioning)UAV Passive Positioning Model Based on Azimuth-Angle Optimization Algorithm [Attached with MATLAB+Python Code]](01.jpg)
+![(Directional Positioning)UAV Passive Positioning Model Based on Azimuth-Angle Optimization Algorithm [Attached with MATLAB+Python Code]](02.jpg)
+![(Directional Positioning)UAV Passive Positioning Model Based on Azimuth-Angle Optimization Algorithm [Attached with MATLAB+Python Code]](03.jpg)
+![(Directional Positioning)UAV Passive Positioning Model Based on Azimuth-Angle Optimization Algorithm [Attached with MATLAB+Python Code]](04.jpg)
+![(Directional Positioning)UAV Passive Positioning Model Based on Azimuth-Angle Optimization Algorithm [Attached with MATLAB+Python Code]](05.jpg)
+![(Directional Positioning)UAV Passive Positioning Model Based on Azimuth-Angle Optimization Algorithm [Attached with MATLAB+Python Code]](06.jpg)
+
+<!-- PAYMENT_BLOCK -->
+
+## Get this dataset
+
+- Payment link (Stripe): [Buy now](https://buy.stripe.com/3cs8yP7sY87d0vu9AB)
+- Payment QR code: ![Payment QR code](pay.png)
+
+<!-- /PAYMENT_BLOCK -->
